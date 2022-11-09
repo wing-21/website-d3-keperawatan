@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DIII Keperawatan Unhas</title>
+    <link rel="icon" type="image/x-icon" href="gambar/logo.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+
+  <!--Awal Navbar-->
+    <nav>
+      <div class="layar-dalam">
+        <div class="logo">
+          <a href=""><img src="gambar/logo1.png" class="putih" /></a>
+          <a href=""><img src="gambar/logo2.png" class="hitam" /></a>
+        </div>
+        <div class="menu">
+          <a href="#" class="tombol-menu">
+            <span class="garis"></span>
+            <span class="garis"></span>
+            <span class="garis"></span>
+          </a>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="curriculum.html">Curriculum</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="#blog">Blog</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  <!--Akhir Navbar-->
+
+
+  <!--Header-->
+    <div class="layar-penuh">
+      <header id="home">
+        <div class="overlay"></div>
+        <video autoplay muted loop>
+          <source src="gambar/welcome.mp4" type="video/mp4"/>
+        </video>
+      </header>
+
+  <!--Conten About Us-->
+      <main>
+        <section id="aboutus">
+          <div class="layar-dalam">
+            <h3>About Us</h3>
+            <div class="konten-isi">
+              <p>
+                Didirikan sesuai SK Rektor Universitas Hasanuddin No. 3677/UN4.1/KEP/2019 tentang Pembukaan Program Studi Kesehatan Daerah Terpencil Program Diploma Tiga (D-III) Vokasi pada Fakultas Kedokteran Universitas Hasanuddin Nama PS
+                berubah menjadi Program Studi DIII Keperawatan dan Kesehatan Daerah Terpencil pada Fakultas Kedokteran sesuai SK Rektor No. 560//UN4.1/KEP/2021 Pada 11 Juni 2021 resmi bergabung ke Fakultas Keperawatan sesuai SK Rektor No.
+                3498/UN4.1/KEP/2021tentang perubahan nama Program Studi DIII Keperawatan dan Kesehatan Daerah Terpencil pada Fakultas Kedokteran menjadi Program Studi DIII Keperawatan pada Fakultas Keperawatan
+              </p>
+              <a href="about.html" class="hero-btn">Selengkapnya</a>
+            </div>
+        </section>
+
+  <!--Conten Angka--> 
+        <section class="abuabu" id="angka">
+          <h3>D.III KEPERAWATAN DALAM ANGKA</h3>
+          <div class="layar-dalam angka">
+            <div>
+              <img src="gambar/mahasiswa.png" />
+              <h6>Jumlah Mahasiswa </h6>
+              <p>112 mahasiswa terdiri dari 3 angkatan yaitu 2018,2019,dan 2020</p>
+            </div>
+            <div>
+              <img src="gambar/alumni.png" />
+              <h6>Jumlah Alumni</h6>
+              <p>14 alumni pertama yang merupakan angkatan 2018</p>
+            </div>
+            <div>
+              <img src="gambar/kurikulum.png" />
+              <h6>Kurikulum</h6>
+              <p>Menggunakan kurikulum  2019</p>
+            </div>
+          </div>
+        </section>
+
+    <!--Conten Galery-->
+    <section id="gallery">
+      <h3>Kegiatan Kemahasiswaan</h3>
+        <div class="slideshow-container">
+
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="gambar/galery1.jpg" style="width:100%">
+            <div class="text">Caption Text</div>
+          </div>
+          
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="gambar/galery2.jpg" style="width:100%">
+            <div class="text">Caption Two</div>
+          </div>
+          
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="gambar/galery3.png" style="width:100%">
+            <div class="text">Caption Three</div>
+          </div>
+          
+          </div>
+          <br>
+          
+          <div style="text-align:center">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+          </div>
+          
+          <script>
+          let slideIndex = 0;
+          showSlides();
+          
+          function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+          }
+          </script>
+      </section>
+      
+   <!--Conten Team--> 
+        <section id="team">
+          <div class="layar-dalam">
+            <h3>Dosen Homebase</h3>
+            <div class="tim">
+              <div>
+                <img src="gambar/ulid.png" />
+                <h6>Nurmaulid, S.Kep., Ns., M.Kep</h6>
+                <span>Ketua Program Studi</span>
+              </div>
+              <div>
+                <img src="gambar/indra.png" />
+                <h6>Indra Gaffar, S.Kep., Ns., M.Kep</h6>
+                <span>Sekretaris Program Studi</span>
+              </div>
+              <div>
+                <img src="gambar/mita.png" />
+                <h6>Framita Rahman, S.Kep., Ns., M.Sc</h6>
+                <span>Dosen</span>
+              </div>
+            </div>
+            <a href="team.html" class="hero-btn">Selengkapnya</a>
+          </div>
+        </section>
+
+
+<!--Awal Footer-->
+<footer>
+  <div class="layar-dalam">
+    <div class="container">
+      <div class="sec aboutus">
+        <img src="gambar/logo1.png" alt="">
+        <ul class="sci">
+          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+          <li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+        </ul>
+      </div>
+      <div class="sec quicklinks">
+        <h2>Quick Links</h2>
+        <ul>
+          <li><a href="https://library.unhas.ac.id/">Perpustakaan</a></li>
+          <li><a href="http://repository.unhas.ac.id/">Repasitori</a></li>
+          <li><a href="https://nursing.unhas.ac.id/">Fakultas Keperawatan</a></li>
+          <li><a href="https://www.unhas.ac.id/">Universitas Hasanuddin</a></li>
+          <li><a href="https://neosia.unhas.ac.id/">Neosia</a></li>
+          <li><a href="https://sikola.unhas.ac.id/">Sikola Unhas</a></li>
+        </ul>
+      </div>
+      <div class="sec quicklinks">
+        <h2>Menu</h2>
+        <ul>
+          <li><a href="https://www.unhas.ac.id/kalender-akademik/">Kalender Akademik</a></li>
+          <li><a href="#">Unit Pendukung</a></li>
+          <li><a href="#">Kemitraan</a></li>
+          <li><a href="#">Akademik</a></li>
+      </ul>
+      </div>
+      <div class="sec contact">
+        <h2>Contact Us</h2>
+        <ul class="info">
+          <li>
+            <span><i class="fa fa-map-marker"></i></span>
+            <span>Jl. Perintis Kemerdekaan Km.10 Tamalanrea, Makassar Sulawesi selatan Indonesia</span>
+          </li>
+          <li>
+            <span><i class="fa fa-whatsapp"></i></span><a href="https://wa.me/082188835130">0821 8883 5130</a>
+          </li>
+          <li>
+            <span><i class="fa fa-envelope" aria-hidden="true"></i></span><a href="mailto:d3keperawatan@unhas.ac.id">d3keperawatan@unhas.ac.id</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+  <div class="copyrightText">
+    <p>Copyright © 2022 Diploma of Nursing All Rights reserved </p>
+  </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="javascript.js"></script>
+  </body>
+</html>
+<!--Akhir Footer-->
