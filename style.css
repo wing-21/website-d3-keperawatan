@@ -2,7 +2,7 @@
 * {
   font-family: 'Poppins', sans-serif;
   line-height: 20px;
-  font-size: 15px;
+  font-size: 14px;
 }
 
 html {
@@ -32,6 +32,7 @@ nav {
   line-height: 60px;
   width: 100%;
   transition: background-color 0.1s ease;
+  background-color: #fff;
 }
 nav.putih {
   background-color: #fff;
@@ -76,7 +77,6 @@ nav ul li a {
 
 nav ul li a:hover {
   text-decoration: underline;
-  color: #ffeb3b;
 }
 
 /* Pengaturan Header */
@@ -138,13 +138,13 @@ header .overlay {
 }
 .tombol-menu .garis {
   height: 3px;
-  background-color: #fff;
+  background-color: black;
 }
 section {
   padding: 50px 0px 50px 0px;
 }
 section h3 {
-  font-size: 25px;
+  font-size: 20px;
   text-align: center;
 }
 section p {
@@ -160,6 +160,19 @@ section h3::after {
 @media screen and (max-width: 991.98px) {
   header {
     height: 40vh;
+  }
+  header video {
+    margin-top: 60px;
+    height: 80%;
+  }
+  section p {
+    font-size: 12px;
+  }
+  section h3 {
+    font-size: 14px;
+  }
+  * {
+    font-size: 12px;
   }
 }
 
@@ -208,7 +221,7 @@ section h3::after {
   color: black;
   border: 1px solid black;
   padding: 12px 34px;
-  font-size: 13px;
+  font-size: 14px;
   background: transparent;
   position: relative;
   cursor: pointer;
@@ -228,6 +241,9 @@ nav .fa {
   .text-box h1 {
     font-size: 25px;
     position: relative;
+  }
+  .hero-btn {
+    font-size: 12px;
   }
 }
 /*----------Gallery--------*/
@@ -432,6 +448,7 @@ section.abuabu {
   }
   nav .menu ul li a {
     color: #333;
+    font-size: 12px;
   }
   .tombol-menu {
     display: flex;
@@ -464,7 +481,7 @@ td {
   text-align: center;
 }
 .tabel h1 {
-  font-size: 20px;
+  font-size: 14px;
   margin-top: 5%;
   text-align: center;
   color: red;
